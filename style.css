@@ -1,0 +1,218 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%) ;
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--White);
+    font-size: 10px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container{
+    background-color: #141519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    padding: 2rem 0 0 3rem;
+    width:400px;
+    border-radius: 1.5rem;
+    background-color: #1F2630;
+}
+.icon{
+    /* width: fit-content; */
+    /* padding: 1rem; */
+    background-color: #262F38;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon img{
+   width: 14px;
+   height: 13px;
+}
+
+.heading{
+    font-size: 2.5rem;
+    font-family: 'Overpass',sans-serif;
+    font-weight: 700;
+    margin-top: 2.5rem;
+}
+.description{
+    width: 33rem;
+}
+.description p{
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--Light-Grey);
+}
+
+.rating-num{
+    display: flex;
+    width: 35rem;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+}
+.numbers{
+    color: var(--Medium-Grey);
+    background-color: #262F38;
+    padding: 2rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+.hover:hover{
+    background-color: #7C8896;
+    color:var(--White);
+    cursor: pointer;
+}
+.numbers-clicked{
+    background-color: var(--Orange);
+    color:var(--White);
+    cursor: pointer;
+}
+.submit-btn{
+    display: flex;
+    /* justify-content: center; */
+}
+.submit-btn .btn{
+background-color: var(--Orange);
+    padding: 1rem 13rem 1rem 13rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    border-radius: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: unset;
+    color: var(--White);
+}
+.submit-btn .btn:hover{
+    color: var(--Orange);
+    background-color: var(--White);
+    text-transform: capitalize;
+}
+.d-none{
+    display: none !important;
+}
+
+.card-2 {
+    width: 400px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2630;
+}
+
+
+.icon-2{
+    /* text-align: center; */
+    align-self: center;
+    margin-top: 6rem;
+
+}
+.heading-2{
+    background-color: #232D38;
+    align-self: center;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    color: var(--Orange);
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+.heading-main{
+    align-self: center;
+    font-size: 2.8em;
+    margin-top: 2.5rem;
+}
+
+.description-2 p {
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--Light-Grey);
+}
+
+.description-2 {
+    width: 34rem;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media screen and (max-width: 376px) {
+    .card{
+        width: 340px;
+        padding: 2rem 0 0 2rem;
+    }
+    .description {
+        width: 30rem;
+    }
+    .rating-num{
+        width: 30rem;
+    }
+    .numbers{
+        margin-right: 1rem;
+    }
+    .submit-btn .btn{
+        padding: 1.2rem 11.5rem 1.2rem 11.5rem;
+    }
+    .card-2 {
+        width: 340px;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #1F2630;
+    }
+    .description-2 {
+        width: 30rem;
+    }
+    .icon-2 {
+        /* text-align: center; */
+        align-self: center;
+        margin-top: 4rem;
+
+    }
+
+}
+
+
+/* font-family: 'Overpass',
+sans-serif; */
